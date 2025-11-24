@@ -1,0 +1,213 @@
+/* Coach page specific styles */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.form-row select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.form-row select:hover {
+  border-color: #667eea;
+}
+
+.form-row select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.coach-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.coach-plan {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 32px;
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.coach-plan h3 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.plan-section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.plan-section h4 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plan-row {
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.plan-row strong {
+  font-weight: 600;
+}
+
+.plan-steps {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.plan-steps li {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.plan-row.meta {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.coach-feedback {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.coach-feedback .btn {
+  min-width: 120px;
+}
+
+.coach-feedback .btn--primary {
+  background: white;
+  color: #667eea;
+  font-weight: 600;
+}
+
+.coach-feedback .btn--primary:hover {
+  background: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.coach-feedback .btn--outline {
+  border-color: white;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.coach-feedback .btn--outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.history-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.history-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.history-item {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.history-item:hover {
+  background: #e9ecef;
+  transform: translateX(4px);
+}
+
+.history-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.history-content {
+  flex: 1;
+}
+
+.history-content strong {
+  display: block;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.history-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .coach-feedback {
+    flex-direction: column;
+  }
+  
+  .coach-feedback .btn {
+    width: 100%;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

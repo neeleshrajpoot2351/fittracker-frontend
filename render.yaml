@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: fittracker-frontend
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npx serve -s build -l 3000
+    envVars:
+      - key: REACT_APP_API_URL
+        sync: false
+      - key: NODE_ENV
+        value: production
+

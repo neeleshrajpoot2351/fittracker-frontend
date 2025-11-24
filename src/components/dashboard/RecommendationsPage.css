@@ -1,0 +1,87 @@
+/* Recommendations page specific styles */
+
+.active-detail-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.active-detail-card .detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.active-detail-card .detail-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.active-detail-card .detail-body {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.active-detail-card .detail-body p {
+  margin: 8px 0;
+}
+
+.active-detail-card .detail-body h4 {
+  margin-top: 16px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.active-detail-card .detail-body ol,
+.active-detail-card .detail-body ul {
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+.active-detail-card .detail-body li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.active-detail-card .btn--primary {
+  margin-top: 16px;
+  background: white;
+  color: #667eea;
+}
+
+.active-detail-card .btn--primary:hover {
+  background: #f0f0f0;
+}
+
+.active-detail-card .btn--outline {
+  border-color: white;
+  color: white;
+}
+
+.active-detail-card .btn--outline:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.recommendation-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recommendation-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.recommendation-item .btn {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.recommendation-item .btn:hover {
+  transform: scale(1.02);
+}
